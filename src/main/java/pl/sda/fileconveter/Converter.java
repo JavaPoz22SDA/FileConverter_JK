@@ -16,6 +16,11 @@ public class Converter {
             System.out.println(json);
             System.out.println("Działa nam obiekt JSONReader");
         }
+        if(reader instanceof CSVReader){
+            System.out.println("Działa nam obiekt CSVReader");
+        }
+
+        System.out.println(reader.read(sourceFilePath));
 
 
     }
